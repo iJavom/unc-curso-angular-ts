@@ -19,7 +19,7 @@
     };
     functionTS(2, 2);
     //Parametros opcionales
-    function concatenacionTS(a, b) {
+    function concatenacionTS(a, b, c) {
         return a + (b || "");
     }
     console.log(concatenacionTS("Hola", " mundo"));

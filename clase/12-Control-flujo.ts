@@ -56,5 +56,51 @@
                 console.log("Nota erronea");
             break;
     }
+
+    //Operador ternario
+    //Sirve para hacer una validacion y retornar inmediatamente un valor
+    // la condicion es lo que va antes del "?" 
+    //la respuesta valida que va despues del "?" y antes del ":"
+    //La negacion que va despues del ":"
+    var respuesta = (nota >= 5) ? "Aprobado" : "Reprobado";
+
+
+    //bucles
+    //while
+    //Se ejecuta siempre y cuando se cumpla la condicion;
+    console.log("----- while");
+    var contador = 0;
+    
+    while(contador < 10){
+        console.log(contador);
+        contador++;
+    }
+
+    //do while
+    //Se va a ejecutar por lo menos una vez y despues va a preguntar si se sigue ejecutando en base a la condicion
+    console.log("----do while");
+    contador =0;
+    do{
+        console.log(contador);
+        contador++;
+    }while(contador<10);
+
+    //for
+    //Un bucle que se ejecuta donde recibe 3 parametros que el primero corresponde a la primera accion que se va a realizar , el segundo es la condicion hasta donde se va ejecutar y el tercero es la accion que ejecuta al finalizar el bucle
+    console.log("-----for");
+    for(let i=0;i<10;i++){
+        console.log(i);
+    }
+
+    //for .. in .. //Esto lo veremos mas adelante
+    //for .. of .. //Esto tambien lo veremos mas adelante
+    //Array functions (que son las funciones que trabajan con array)
+    console.log("Ejemplo de array function");
+    let unArrayVariable = ["a","b","c","d","e","f"];
+    unArrayVariable.forEach((elemento,indice,array)=>{
+        console.log(`Soy el elemento ${elemento}`);
+        console.log(`Voy en la posicion ${indice}`);
+        console.log(`My array es ${array}`);
+    });
 })();
 

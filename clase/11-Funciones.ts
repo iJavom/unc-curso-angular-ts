@@ -24,7 +24,7 @@
     functionTS(2,2);
 
     //Parametros opcionales
-    function concatenacionTS(a:string,b?:string){
+    function concatenacionTS(a:string,b?:string,c?:string){
         return a+(b||"");
     }
     console.log(concatenacionTS("Hola"," mundo"));
@@ -51,5 +51,6 @@
         return resultado;
     };
     multiplicarDosValores(2,2);
+
 
 })();
